@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/paca-parebrise/static/css/main.cb19a4da.css",
-    "main.js": "/paca-parebrise/static/js/main.f04db1b2.js",
+    "main.js": "/paca-parebrise/static/js/main.a1b9dacb.js",
     "static/media/herobg.jpg": "/paca-parebrise/static/media/herobg.a0fd666072431a4eb59b.jpg",
     "static/media/feature-3-img.png": "/paca-parebrise/static/media/feature-3-img.df9642525cce3c23da55.png",
     "static/media/feature-1-img.png": "/paca-parebrise/static/media/feature-1-img.1cd2f35e935cb990072e.png",
@@ -10,10 +10,10 @@
     "static/media/logo.png": "/paca-parebrise/static/media/logo.72b664cc5fac362382b3.png",
     "index.html": "/paca-parebrise/index.html",
     "main.cb19a4da.css.map": "/paca-parebrise/static/css/main.cb19a4da.css.map",
-    "main.f04db1b2.js.map": "/paca-parebrise/static/js/main.f04db1b2.js.map"
+    "main.a1b9dacb.js.map": "/paca-parebrise/static/js/main.a1b9dacb.js.map"
   },
   "entrypoints": [
     "static/css/main.cb19a4da.css",
-    "static/js/main.f04db1b2.js"
+    "static/js/main.a1b9dacb.js"
   ]
 }
