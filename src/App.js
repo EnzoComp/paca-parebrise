@@ -1,16 +1,12 @@
-import React, { useEffect, useState } from "react";
+import React, { useState, useEffect } from "react";
 import {
-  BrowserRouter as Router,
+  HashRouter as Router,
   Route,
   Routes,
   useLocation,
 } from "react-router-dom";
-
-// import aos
 import Aos from "aos";
 import "aos/dist/aos.css";
-
-// import components
 import Header from "./components/Header";
 import Hero from "./components/Hero";
 import NavMobile from "./components/NavMobile";
@@ -23,9 +19,7 @@ import Footer from "./components/Footer";
 import Formation from "./components/Formation";
 
 const AppContent = () => {
-  // mobile nav state
   const [navMobile, setNavMobile] = useState(false);
-  // aos init
   useEffect(() => {
     Aos.init({
       duration: 2500,
@@ -33,16 +27,12 @@ const AppContent = () => {
     });
   });
 
-  // Get the current location
   const location = useLocation();
 
   return (
     <div id="top" className="overflow-hidden">
-      {/* Conditionally render Header, AccountBtns, and Footer based on current route */}
       {location.pathname !== "/formation" && (
-        <>
-          <Header setNavMobile={setNavMobile} />
-        </>
+        <Header setNavMobile={setNavMobile} />
       )}
       <Routes>
         <Route
@@ -50,7 +40,6 @@ const AppContent = () => {
           element={
             <>
               <Hero />
-              {/* mobile nav */}
               <div
                 className={`${
                   navMobile ? "right-0" : "-right-full"
