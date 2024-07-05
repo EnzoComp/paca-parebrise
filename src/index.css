@@ -1,0 +1,64 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply font-primary bg-darkblue text-white leading-normal;
+  }
+
+  .h3 {
+    @apply text-[22px] lg:text-[32px] font-bold;
+  }
+
+  .btn {
+    @apply bg-blue h-[60px] px-4 rounded-full hover:bg-blue-hover transition flex items-center text-lg font-medium outline-none;
+  }
+
+  .section {
+    @apply py-12 lg:py-24;
+  }
+
+  .section-title {
+    @apply text-2xl lg:text-[40px] font-bold leading-normal mb-6;
+  }
+
+  .section-subtitle {
+    @apply mt-6 mb-8 text-gray;
+  }
+
+  .input,
+  .select {
+    @apply outline-none w-full border-b border-gray text-darkblue h-[38px] text-xl;
+  }
+
+  .input {
+    @apply lg:max-w-[410px] bg-transparent;
+  }
+
+  .select {
+    @apply lg:max-w-[200px] cursor-pointer;
+  }
+}
+
+.hero-section {
+  background-image: url('./assets/img/herobg.jpg');
+  background-size: cover;
+  background-attachment: scroll;
+  background-position: center;
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  z-index: 0;
+}
+
+.hero-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #27262bb0;
+  z-index: -1;
+}
