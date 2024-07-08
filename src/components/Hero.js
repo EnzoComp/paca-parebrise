@@ -5,7 +5,7 @@ import { IoIosArrowDroprightCircle } from "react-icons/io";
 import { HiChartBar, HiUser, HiGlobe } from "react-icons/hi";
 
 // import banner
-import Banner from "../components/Banner";
+import Banner from "./Banner";
 
 const Hero = () => {
   return (
@@ -13,7 +13,7 @@ const Hero = () => {
       <Banner />
       <section id="header" className="hero-section flex mt-16">
         {/* Ajout de la marge supérieure */}
-        <div className="container mx-auto">
+        <div className="container mx-auto mt-4">
           <div className="flex flex-col items-center lg:flex-row">
             {/* hero text */}
             <div className="flex-1">
@@ -23,7 +23,7 @@ const Hero = () => {
                 data-aos="fade-down"
                 data-aos-delay="400"
               >
-                <div className="flex items-center justify-between text-sm lg:text-base">
+                <div className="flex items-center justify-between text-sm lg:text-base text-center">
                   <div className="bg-white text-darkblue rounded-full font-medium py-1 px-4">
                     100€ OFFERTS
                   </div>
@@ -35,28 +35,38 @@ const Hero = () => {
 
               {/* title */}
               <h1
-                className="text-[32px] lg:text-[69px] font-bold leading-tight mb-6"
+                className="text-[32px] lg:text-[69px] font-bold leading-tight mb-6 text-center lg:text-left"
                 data-aos="fade-down"
                 data-aos-delay="500"
               >
                 REMPLACEMENT DE PARE-BRISE À DOMICILE
               </h1>
               <p
-                className="max-w-[440px] leading-relaxed mb-8 lg:text-[20px]"
+                className="max-w-[440px] leading-relaxed mb-8 lg:text-[20px] text-center lg:text-left"
                 data-aos="fade-down"
                 data-aos-delay="600"
               >
                 PACA PARE-BRISE vous propose le déplacement à domicile, sur
                 votre lieu de travail ou ailleurs !
               </p>
-              <button
-                className="btn gap-x-4 pl-6 text-sm h-12 lg:h-14 lg:text-base"
-                data-aos="fade-down"
-                data-aos-delay="700"
-              >
-                Prendre rendez-vous
-                <IoIosArrowDroprightCircle className="text-2xl lg:text-3xl" />
-              </button>
+              <div className="hidden lg:flex">
+                <button
+                  className="btn gap-x-4 pl-6 text-sm h-12 lg:h-14 lg:text-base mr-8"
+                  data-aos="fade-down"
+                  data-aos-delay="700"
+                >
+                  Prenez rendez-vous
+                  <IoIosArrowDroprightCircle className="hidden lg:flex text-2xl lg:text-3xl" />
+                </button>
+                <button
+                  className="btn gap-x-4 pl-6 text-sm h-12 lg:h-14 lg:text-base"
+                  data-aos="fade-down"
+                  data-aos-delay="700"
+                >
+                  07 64 01 31 18
+                  <IoIosArrowDroprightCircle className="hidden lg:flex text-2xl lg:text-3xl" />
+                </button>
+              </div>
             </div>
           </div>
 

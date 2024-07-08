@@ -44,7 +44,7 @@ const Newsletter = () => {
               </a>
               <a
                 className="flex items-center text-[17px] lg:text-[19px] max-w-[260px] hover:text-darkblue/70 hover:text-[19.5px] transition-all duration-300 mt-3"
-                href="tel:0769988297"
+                href="tel:0764013118"
               >
                 <FaPhone className="mr-2" />
                 Nous appeler maintenant

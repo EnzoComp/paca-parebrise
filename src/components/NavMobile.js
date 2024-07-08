@@ -1,6 +1,7 @@
 import React from "react";
 
-import { Link } from "react-router-dom";
+import { Link } from "react-scroll";
+import { NavLink } from "react-router-dom";
 
 // import data
 import { navData } from "../data";
@@ -23,15 +24,20 @@ const NavMobile = ({ setNavMobile }) => {
         {navData.map((item, index) => {
           return (
             <li key={index}>
-              <a href={item.href}>{item.name}</a>
+              <Link to={item.href.substring(1)} smooth={true} duration={700}>
+                {item.name}
+              </Link>
             </li>
           );
         })}
         <div className="items-center font-medium pt-10">
           {/* link btn */}
-          <Link to="/formation" className="btn transition h-[50px] text-base">
+          <NavLink
+            to="/formation"
+            className="btn transition h-[50px] text-base"
+          >
             Notre Formation
-          </Link>
+          </NavLink>
         </div>
       </ul>
     </nav>

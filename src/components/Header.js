@@ -36,6 +36,22 @@ const Header = ({ setNavMobile }) => {
           <CgMenuRight className="text-3xl" />
         </div>
       </div>
+      <div className="lg:hidden py-2 px-4 mt-4 flex space-x-4">
+        <button
+          className="btn w-full max-w-xs text-sm h-12 justify-center"
+          data-aos="fade-down"
+          data-aos-delay="700"
+        >
+          Prenez rendez-vous
+        </button>
+        <button
+          className="btn w-full max-w-xs text-sm h-12 justify-center"
+          data-aos="fade-down"
+          data-aos-delay="700"
+        >
+          07 64 01 31 18
+        </button>
+      </div>
     </header>
   );
 };

@@ -1,6 +1,15 @@
 import React from "react";
 
+import { useNavigate } from "react-router-dom";
+
+import { TbArrowBackUp } from "react-icons/tb";
+
 const Formation = () => {
+  const navigate = useNavigate();
+
+  const handleGoBack = () => {
+    navigate(-1);
+  };
   return (
     <section className="flex mt-10">
       <div className="container mx-auto">
@@ -8,7 +17,7 @@ const Formation = () => {
         <h1 className="text-[32px] lg:text-[69px] text-blue font-bold leading-tight mb-6">
           PRÉSENTATION DE NOTRE FORMATION
         </h1>
-        <p className="max-w-[750px] leading-relaxed mb-8 lg:text-[24px]">
+        <p className="max-w-[750px] leading-relaxed mb-20 lg:text-[24px]">
           Vous rêvez d'être votre propre patron ? Devenez un expert du vitrage
           automobile avec PACA Pare-Brise ! Lancez votre propre entreprise dans
           le domaine du vitrage automobile et de profiter de marges
@@ -162,13 +171,25 @@ const Formation = () => {
 
         <div className="flex flex-col lg:flex-row justify-between mb-10">
           <p className="max-w-[900px] leading-relaxed mb-8 lg:text-[22px]">
-            Prix de la formation : 1499 € au lieu de 3000 €. <br />
+            Prix de la formation : 1499 € au lieu de 3000 € avec le code promo
+            "parebrise50". <br />
             La formation serra rentabilisée au bout 2 pare-brise remplacé !!!!
           </p>
-          <button className="btn px-8 justify-center">
+          <button className="btn px-8 justify-center mb-10">
             <a href="d" target="_blank" rel="noopener noreferrer">
               Acheter Notre Formation
             </a>
+          </button>
+        </div>
+
+        {/* Button Back */}
+        <div className="fixed bottom-5 left-0 right-0 flex justify-center w-full z-10">
+          <button
+            onClick={handleGoBack}
+            className="btn justify-center w-[250px] h-[40px] text-base gap-x-4"
+          >
+            <TbArrowBackUp />
+            Retourner vers le site
           </button>
         </div>
       </div>
