@@ -48,9 +48,8 @@ const Header = ({ setNavMobile }) => {
           className="btn w-full max-w-xs text-sm h-12 justify-center"
           data-aos="fade-down"
           data-aos-delay="700"
-          href="tel:0764013118"
         >
-          07 64 01 31 18
+          <a href="tel:0764013118">07 64 01 31 18</a>
         </button>
       </div>
     </header>

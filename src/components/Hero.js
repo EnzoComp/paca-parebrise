@@ -62,9 +62,8 @@ const Hero = () => {
                   className="btn gap-x-4 pl-6 text-sm h-12 lg:h-14 lg:text-base"
                   data-aos="fade-down"
                   data-aos-delay="700"
-                  href="tel:0764013118"
                 >
-                  07 64 01 31 18
+                  <a href="tel:0764013118">07 64 01 31 18</a>
                   <IoIosArrowDroprightCircle className="hidden lg:flex text-2xl lg:text-3xl" />
                 </button>
               </div>
