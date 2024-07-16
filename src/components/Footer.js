@@ -57,16 +57,9 @@ const Footer = () => {
                 <li>
                   <NavLink
                     to="/formation"
-                    target="_blank"
-                    rel="noopener noreferrer"
                     className="cursor-pointer hover:text-blue transition"
                   >
                     Notre Formation
-                  </NavLink>
-                </li>
-                <li>
-                  <NavLink className="hover:text-blue transition" href="#">
-                    Prendre Rendez-Vous
                   </NavLink>
                 </li>
                 <li>

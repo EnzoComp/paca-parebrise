@@ -16,6 +16,9 @@ module.exports = {
           DEFAULT: "#27262B",
           secondary: "#252540",
         },
+        red: {
+          DEFAULT: "#ff0000",
+        },
         blue: {
           DEFAULT: "#ffc11c",
           hover: "#C3983C",
