@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/paca-parebrise/static/css/main.860498b4.css",
-    "main.js": "/paca-parebrise/static/js/main.f29da7b2.js",
+    "main.css": "/paca-parebrise/static/css/main.a094de3c.css",
+    "main.js": "/paca-parebrise/static/js/main.1040a81b.js",
     "static/media/herobg.jpg": "/paca-parebrise/static/media/herobg.a0fd666072431a4eb59b.jpg",
     "static/media/feature-3-img.png": "/paca-parebrise/static/media/feature-3-img.df9642525cce3c23da55.png",
     "static/media/feature-1-img.png": "/paca-parebrise/static/media/feature-1-img.1cd2f35e935cb990072e.png",
@@ -9,11 +9,11 @@
     "static/media/why-img.png": "/paca-parebrise/static/media/why-img.adda26b6f321cb741108.png",
     "static/media/logo.png": "/paca-parebrise/static/media/logo.72b664cc5fac362382b3.png",
     "index.html": "/paca-parebrise/index.html",
-    "main.860498b4.css.map": "/paca-parebrise/static/css/main.860498b4.css.map",
-    "main.f29da7b2.js.map": "/paca-parebrise/static/js/main.f29da7b2.js.map"
+    "main.a094de3c.css.map": "/paca-parebrise/static/css/main.a094de3c.css.map",
+    "main.1040a81b.js.map": "/paca-parebrise/static/js/main.1040a81b.js.map"
   },
   "entrypoints": [
-    "static/css/main.860498b4.css",
-    "static/js/main.f29da7b2.js"
+    "static/css/main.a094de3c.css",
+    "static/js/main.1040a81b.js"
   ]
 }
